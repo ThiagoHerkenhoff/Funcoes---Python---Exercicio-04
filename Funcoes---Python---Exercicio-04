@@ -1,0 +1,19 @@
+"""
+Escreva uma função chamada fatorial que calcule o fatorial de um número inteiro positivo. O fatorial de um número n é o produto de todos os números inteiros positivos de 1 até n.
+
+Dicas:
+    O fatorial de 0 é 1.
+    Use um loop para multiplicar os números.
+"""
+
+def fatorial(numero):
+    if numero == 0:
+        return 1
+    valor = 1
+    for n in range(1, numero + 1):
+        valor = valor * n
+    return valor
+
+print(fatorial(6))
+print(fatorial(15))
+print(fatorial(0))
